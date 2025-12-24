@@ -6,13 +6,8 @@ let flag = 0;
 
 btn.addEventListener("click", function () {
     if (flag === 0) {
-        bulb.style.backgroundColor = "rgb(240, 245, 255)";
-
-        bulb.style.boxShadow = `
-    0 0 30px 15px rgba(230, 235, 255, 0.8),   /* core glow */
-    0 0 60px 30px rgba(200, 210, 255, 0.6),   /* mid glow */
-    0 0 120px 60px rgba(180, 200, 255, 0.4)   /* soft outer halo */`;
-
+        bulb.style.backgroundColor = "rgb(255, 255, 120)";
+        bulb.style.boxShadow = `0 0 70px 45px rgba(255, 255, 120, 0.8)`;
         btn.innerHTML = "On";
         btn.style.backgroundColor = "green";
         btn.style.color = "white";
@@ -27,4 +22,5 @@ btn.addEventListener("click", function () {
         btn.style.color = "black";
         flag = 0;
     }
+
 });
